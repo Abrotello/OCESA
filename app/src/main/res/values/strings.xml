@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">OCESA</string>
+    <string name="OCESA">OCESA</string>
+    <string name="registro">-   Solicitar registro      -</string>
+    <string name="inicio">Iniciar Sesion</string>
+    <string name="salir">Salir</string>
+
+    <string name="nombreRegistro">Nombre</string>
+    <string name="apellidoRegistro">Apellido</string>
+    <string name="correo">Correo electrónico</string>
+    <string name="CLABE">Cuenta CLABE</string>
+    <string name="NSS">Numero de Seguridad Social</string>
+    <string name="Banco">Banco</string>
+    <string name="RFC">RFC</string>
+    <string name="CURP">CURP</string>
+    <string name="solicitarRegistro">Solicitar Registro</string>
+    <string name="regresar">Regresar</string>
+    <string name="men">Menú</string>
+    <string name="aclaraciones">Aclaraciones</string>
+    <string name="saldos">Saldos</string>
+    <string name="eventos">Eventos</string>
+    <string name="calendario">Calendario</string>
+    <string name="cotrasena">Contraseña</string>
+    <string name="numero_de_empleado">Numero de empleado</string>
+
+
+</resources>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ABD8D1D1"
+    tools:context=".Registro">
+
+    <Button
+        android:id="@+id/btnRegistrarme"
+        android:layout_width="150dp"
+        android:layout_height="54dp"
+        android:backgroundTint="#D3202020"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="registrarEmpleado"
+        android:text="@string/solicitarRegistro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <Button
+        android:id="@+id/btnRegresar"
+        android:layout_width="165dp"
+        android:layout_height="54dp"
+        android:backgroundTint="#D3202020"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="mainActivity"
+        android:text="@string/regresar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.853"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registro"
+        android:textColor="#020202"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtNombreRegistro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <EditText
+        android:id="@+id/txtNombreRegistro"
+        android:layout_width="310dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="76dp"
+        android:backgroundTint="#191818"
+        android:ems="10"
+        android:hint="@string/nombreRegistro"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textColor="#131313"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.554"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/txtApellidoRegistro"
+        android:layout_width="311dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:autofillHints=""
+        android:backgroundTint="#191818"
+        android:ems="10"
+        android:hint="@string/apellidoRegistro"
+        android:inputType="textPersonName"
+        android:textColor="#131313"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreRegistro"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/txtCorreoRegistro"
+        android:layout_width="311dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#191818"
+        android:ems="10"
+        android:hint="@string/correo"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:textColor="#131313"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtApellidoRegistro" />
+
+    <EditText
+        android:id="@+id/txtRFC"
+        android:layout_width="319dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="116dp"
+        android:autofillHints=""
+        android:backgroundTint="#191818"
+        android:ems="10"
+        android:hint="@string/RFC"
+        android:inputType="textPersonName"
+        android:textColor="#131313"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.619"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCLABE"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <EditText
+        android:id="@+id/txtCURP"
+        android:layout_width="322dp"
+        android:layout_height="54dp"
+        android:autofillHints=""
+        android:backgroundTint="#191818"
+        android:ems="10"
+        android:hint="@string/CURP"
+        android:inputType="textPersonName"
+        android:textColor="#131313"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.595"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRFC"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/txtCLABE"
+        android:layout_width="311dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:backgroundTint="#191818"
+        android:ems="10"
+        android:hint="@string/CLABE"
+        android:inputType="number"
+        android:textColor="#131313"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.57"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCorreoRegistro" />
+
+    <EditText
+        android:id="@+id/txtNSS"
+        android:layout_width="311dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:autofillHints=""
+        android:backgroundTint="#191818"
+        android:ems="10"
+        android:hint="@string/NSS"
+        android:inputType="textPersonName"
+        android:textColor="#131313"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.57"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCLABE" />
+
+    <Spinner
+        android:id="@+id/sPuesto"
+        android:layout_width="291dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtRFC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreRegistro"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

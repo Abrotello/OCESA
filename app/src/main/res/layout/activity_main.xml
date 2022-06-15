@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ABD8D1D1"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/OCESA"
+        android:textAlignment="center"
+        android:textColor="#020202"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtNumeroEmpleado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtNumeroEmpleado"
+        android:layout_width="298dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="212dp"
+        android:autofillHints=""
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:hint="@string/numero_de_empleado"
+        android:inputType="number"
+        android:textColor="#131313"
+        android:textColorHint="#757575"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnInicio"
+        android:layout_width="178dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="192dp"
+        android:backgroundTint="#D3202020"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="iniciarSesion"
+        android:text="@string/inicio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtNumeroEmpleado"
+        app:layout_constraintVertical_bias="0.109" />
+
+    <EditText
+        android:id="@+id/txtContrasena"
+        android:layout_width="297dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#191818"
+        android:ems="10"
+        android:hint="@string/cotrasena"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:textColor="#050505"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/btnInicio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumeroEmpleado"
+        app:layout_constraintVertical_bias="0.222" />
+
+    <TextView
+        android:id="@+id/txtRegistro"
+        android:layout_width="272dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:clickable="true"
+        android:contextClickable="true"
+        android:cursorVisible="true"
+        android:focusable="true"
+        android:onClick="activityRegistro"
+        android:text="@string/registro"
+        android:textAlignment="center"
+        android:textColor="#050505"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnInicio"
+        app:layout_constraintVertical_bias="0.131" />
+</androidx.constraintlayout.widget.ConstraintLayout>
